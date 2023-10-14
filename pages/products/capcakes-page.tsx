@@ -13,7 +13,7 @@ const CapcakesPage = ({ capcakes }: { capcakes: any }) => {
 };
 
 export async function getServerSideProps() {
-   const res = await fetch('https://sweet-life-ten.vercel.app/api/products/capcakes');
+   const res = await fetch('https://diplom-bay.vercel.app/api/products/capcakes');
    const capcakes = await res.json();
 
    return {

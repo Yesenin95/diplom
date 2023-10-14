@@ -9,7 +9,7 @@ const ChokolatesPage = ({ chokolates }: { chokolates: any }) => {
 };
 
 export async function getServerSideProps() {
-   const res = await fetch('https://sweet-life-ten.vercel.app/api/products/chokolates');
+   const res = await fetch('https://diplom-bay.vercel.app/api/products/chokolates');
    const chokolates = await res.json();
 
    return {

@@ -9,7 +9,7 @@ const KonfetaPage = ({ konfeta }: { konfeta: any }) => {
 };
 
 export async function getServerSideProps() {
-   const res = await fetch('https://sweet-life-ten.vercel.app/api/products/konfeta');
+   const res = await fetch('https://diplom-bay.vercel.app/api/products/konfeta');
    const konfeta = await res.json();
 
    return {

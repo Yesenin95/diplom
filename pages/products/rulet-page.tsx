@@ -9,7 +9,7 @@ const RuletPage = ({ rulet }: { rulet: any }) => {
 };
 
 export async function getServerSideProps() {
-   const res = await fetch('https://sweet-life-ten.vercel.app/api/products/rulet');
+   const res = await fetch('https://diplom-bay.vercel.app/api/products/rulet');
    const rulet = await res.json();
 
    return {

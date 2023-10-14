@@ -1,0 +1,72 @@
+.productCardGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+   gap: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+
+.productCard {
+   border: 1px solid #3d0f0f;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s ease-in-out;
+   display: flex;
+   flex-direction: column;
+   height: 450px;
+
+}
+
+.productCard:hover {
+   transform: translateY(-5px);
+   box-shadow: 4px 6px 6px 2px red;
+}
+
+.detailsButton {
+   background-color: var(--chakra-colors-chakra-border-color);
+   ;
+   color: white;
+   border: none;
+   padding: 10px 12px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.2s ease-in-out;
+   margin-top: 30px;
+}
+
+.detailsButton:hover,
+.addToCartButton:hover {
+   background-color: red;
+}
+
+.addToCartButton {
+   background-color: grey;
+   color: white;
+   border: none;
+   padding: 8px 12px;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-top: 10px;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.details {
+   display: block;
+   margin-top: 10px;
+   background-color: transparent;
+   padding: 10px;
+   border-radius: 4px;
+   color: white;
+}
+
+.btn {
+   position: absolute;
+   top: 100px;
+   right: 20px;
+   border: 1px solid;
+   padding: 5px 10px;
+   border-radius: 50px;
+}

@@ -1,0 +1,42 @@
+body{
+   font-family: 'Roboto', Courier, monospace;
+}
+.main-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: #6c6969;
+   height: 88vh;
+}
+
+.Footer {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   bottom: 0;
+   background: linear-gradient(45deg, #333, #9c9898);
+}
+
+
+@media (max-width: 915px) {
+   .main-content {
+      padding-bottom: 100px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 100%;
+      align-items: center;
+   }
+}
+
+@media (max-width: 750px) {
+   .main-content {
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 100%;
+      align-items: center;
+   }
+
+}
